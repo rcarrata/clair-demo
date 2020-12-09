@@ -1,7 +1,5 @@
 ## Quay-Demo
 
-This is the repository to demo Quay, Clair among others.
+Repository to demo Quay, Clair and Container Security Operator among others.
 
-Intented to be using always the Quay Operators.
-
-
+[1 - Quay and Clair Installation](0-install-quay.md)
