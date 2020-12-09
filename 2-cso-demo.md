@@ -13,7 +13,7 @@ Operators -> Container Security -> Subscribe (all namespaces + automatic)
 
 The Quay Container Security operator will be installed. Check the status in the Installed Operators
 
-[![](/pics/cso0.png "CVO Install")]({{site.url}}/pics/cso0.png =250x)
+![](/pics/cso0.png =250x)
 
 ### Deploy example application from Quay registry
 
