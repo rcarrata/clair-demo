@@ -12,16 +12,18 @@ oc project quay-enterprise
 
 2. Install the Operator through Operator Hub (TODO: automate the installation of the operator)
 
+
+
 3. Create the secret (https://access.redhat.com/solutions/3533201)
 
 ```
-oc create -f redhat-pull-secret.yaml
+oc create -f templates/redhat-pull-secret.yaml
 ```
 
 3. Create a Quay Instance and Deploy Clair
 
 ```
-oc apply -f quay-instance.yaml
+oc apply -f templates/quay-instance.yaml
 ```
 
 4. Push one sample image with some vulnerabilities to the new QUAY
@@ -74,7 +76,6 @@ If you upload an images and all is in Passed state, wait a couple of minutes and
 ### Using Skopeo for Copy images directly from other registry to our brand-new Quay
 
 * From Quay.io (SaaS) to Quay in OCP
-
 
 ```
 skopeo copy --dest-creds quay:password --dest-tls-verify=false \
