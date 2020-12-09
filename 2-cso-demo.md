@@ -32,7 +32,7 @@ oc get pod -w
 3. Check the Console Overview and into the Image Vulnerabilities check the vulnerabilities from for
    pods, running the different images through different
 
-<img src="pics/cso1.png" alt="cso1" width="600"/>
+<img src="pics/cso1.png" alt="cso1" width="200"/>
 
 4. Check the Vulnerabilities of the pods using the images what we checked.
 
