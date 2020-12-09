@@ -13,7 +13,7 @@ Operators -> Container Security -> Subscribe (all namespaces + automatic)
 
 The Quay Container Security operator will be installed. Check the status in the Installed Operators
 
-<img src="pics/cso0.png" alt="cso0" width="600"/>
+<img src="pics/cso0.png" alt="cso0" width="800"/>
 
 ### Deploy example application from Quay registry
 
@@ -25,7 +25,6 @@ oc create deployment recommendation --image=quay.io/rcarrata/recommendation:vert
 
 ```
 oc get pod -w
-
 ```
 
 ### Check the vulnerabilities
@@ -33,7 +32,7 @@ oc get pod -w
 3. Check the Console Overview and into the Image Vulnerabilities check the vulnerabilities from for
    pods, running the different images through different
 
-[![](/pics/cso1.png "Image Vulnerabilities Panel")]({{site.url}}/pics/cso1.png)
+<img src="pics/cso1.png" alt="cso1" width="600"/>
 
 4. Check the Vulnerabilities of the pods using the images what we checked.
 
