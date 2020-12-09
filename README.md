@@ -4,7 +4,7 @@ Repository to demo Quay, Clair and Container Security Operator among others.
 
 ### Demo Content
 
-* [1 - Quay and Clair Installation](0-install-quay.md)
+* [1 - Quay and Clair Installation](0-install-clair.md)
 
 * [2 - Clair Demonstration](1-clair-demo.md)
 
