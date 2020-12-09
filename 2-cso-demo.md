@@ -32,16 +32,17 @@ oc get pod -w
 3. Check the Console Overview and into the Image Vulnerabilities check the vulnerabilities from for
    pods, running the different images through different
 
-<img src="pics/cso1.png" alt="cso1" width="200"/>
+<img src="pics/cso1.png" alt="cso1" width="250"/>
 
 4. Check the Vulnerabilities of the pods using the images what we checked.
 
 * Go to Administration -> Image Vulnerabilities and select the namespace (our case is "test")
 
-[![](/pics/cso2.png "Image Manifest Vulnerabilities")]({{site.url}}/pics/cso2.png)
+<img src="pics/cso2.png" alt="cso2" width="600"/>
 
 5. You can open the Manifest also to check the vulnerability manifest in the source registry (Quay)
 
+<img src="pics/cso4.png" alt="cso4" width="400"/>
 [![](/pics/cso4.png "Quay.io Manifest Vulnerability")]({{site.url}}/pics/cso4.png)
 
 6. Also the vulnerabilities can be check by CLI, with the CRD imagemanifestvulns (or vulns)
@@ -61,7 +62,7 @@ sha256.215bcb1c259e3c4555356f4233a4208dd74545a2a60e95a3e599c60239d83c4b   2m
 
 7. Inside of the Image Manifest Vulns we can check the details about the vulnerabilities
 
-[![](/pics/cso3.png "Image Manifest Vulnerabilities Details")]({{site.url}}/pics/cso3.png)
+<img src="pics/cso3.png" alt="cso2" width="300"/>
 
 Notice that is the exact same information as the source, sorted and structure and accesible from
 Openshift Console.
