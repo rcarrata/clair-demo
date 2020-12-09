@@ -1,37 +1,8 @@
 # Quay and Clair PoC Demo
 
-## Install CLAIR and QUAY in Openshift
+### Push some images to the Quay Registry deployed with the Quay Operator
 
-1. Create the project
-
-```
-oc new-project quay-enterprise
-
-oc project quay-enterprise
-```
-
-2. Install the Operator through Operator Hub (TODO: automate the installation of the operator)
-
-3. Create the secret (https://access.redhat.com/solutions/3533201)
-
-```
-oc create -f templates/redhat-pull-secret.yaml
-```
-
-3. Create a Quay Instance and Deploy Clair
-
-```
-oc apply -f templates/quay-instance.yaml
-```
-
-4. Push one sample image with some vulnerabilities to the new QUAY
-
-Quay User default:
-
-```
-user: quay
-password: password
-```
+1. Pull & Push customer and recommendation images from quay SaaS to the Quay on premise registry
 
 * Pull and Push a customer image
 
@@ -60,7 +31,9 @@ podman tag $ID_CUST $QUAY_URL/quay/recommendation
 podman push --tls-verify=false $QUAY_URL/quay/recommendation
 ```
 
-5. Check in the QUAY_URL the images and check the vulnerabilities
+### Check the Vulnerabilities of the images
+
+2. Check in the QUAY_URL the images and check the vulnerabilities
 
 ```
 echo $QUAY_URL
@@ -69,7 +42,9 @@ echo $QUAY_URL
 NOTE: Once Clair is running, it takes several minutes to obtain all the CVEs from the repo.
 If you upload an images and all is in Passed state, wait a couple of minutes and check again the Security Scan once is published
 
-6. Go to one repository -> Check Tags -> Go to Security Scan (takes a bit in finishing the report)
+3. Go to one repository -> Check Tags -> Go to Security Scan (takes a bit in finishing the report)
+
+<img src="pics/clair0.png" alt="clair0" width="500"/>
 
 ### Using Skopeo for Copy images directly from other registry to our brand-new Quay
 
