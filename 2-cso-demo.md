@@ -13,7 +13,7 @@ Operators -> Container Security -> Subscribe (all namespaces + automatic)
 
 The Quay Container Security operator will be installed. Check the status in the Installed Operators
 
-<img src="pics/cso0.png" alt="cso0" width="200"/>
+<img src="pics/cso0.png" alt="cso0" width="600"/>
 
 ### Deploy example application from Quay registry
 
