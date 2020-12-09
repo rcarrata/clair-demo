@@ -75,5 +75,5 @@ ker://${QUAY_URL}/quay/mongodb:latest
 
 * From Quay.io (SaaS) to Quay in OCP
 
-#### This PoC is successfully tested in Quay v3.3 and Clair v3.3.1
+
 
