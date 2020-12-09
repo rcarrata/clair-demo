@@ -20,11 +20,12 @@ The Quay Container Security operator will be installed. Check the status in the 
 2. Create a deployment based in one image that is already in Quay.io
 
 ```
+oc new-project test && oc project test
 oc create deployment recommendation --image=quay.io/rcarrata/recommendation:vertx
 ```
 
 ```
-oc get pod -w
+oc get pod
 ```
 
 ### Check the vulnerabilities
