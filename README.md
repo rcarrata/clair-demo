@@ -8,7 +8,7 @@ Repository to demo Quay, Clair and Container Security Operator among others.
 
 * [2 - Clair Demonstration](1-clair-demo.md)
 
-* [3 - Container Security Operator](2-cso.md)
+* [3 - Container Security Operator](2-cso-demo.md)
 
 ### Tested Environments
 
