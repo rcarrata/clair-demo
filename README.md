@@ -4,12 +4,14 @@ Repository to demo Quay, Clair and Container Security Operator among others.
 
 ### Demo Content
 
-* [1 - Quay and Clair Installation](0-install-clair.md)
+* [0 - Quay and Clair Installation](0-install-clair.md)
 
-* [2 - Clair Demonstration](1-clair-demo.md)
+* [1 - Clair Demonstration](1-clair-demo.md)
 
-* [3 - Container Security Operator](2-cso-demo.md)
+* [2 - Container Security Operator](2-cso-demo.md)
 
-### Tested Environments
+* [3 - Integrating Quay and Clair in Jenkins pipeline](3-quay-pipeline.md)
 
-This PoC is successfully tested in Quay v3.3 and Clair v3.3.1 in OCP4.4+
+* [4 - Container Security Operator](4-devsecops-pipeline.md)
+
+> ![NOTE](pics/note-icon.png) These PoCs are successfully tested in Quay v3.3 and Clair v3.3.1 in OCP4.4+
